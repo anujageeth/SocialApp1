@@ -187,7 +187,7 @@ const Comment = (props) => {
             )}
           </Box>
         )}
-      </Box><div></div>
+      </Box>
     </Box>
   );
 };
