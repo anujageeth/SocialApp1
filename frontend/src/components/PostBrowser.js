@@ -65,14 +65,14 @@ const PostBrowser = (props) => {
 
   useEffect(() => {
     fetchPosts();
-  }, [sortBy, effect]);
+  }, [sortBy, effect, fetchPosts]);
 
   useEffect(() => {
     setPosts([]);
     setPage(0);
     setEnd(false);
     setEffect(!effect);
-  }, [search]);
+  }, [search, setPosts, setPage, setEnd, setEffect]);
 
   const handleSortBy = (e) => {
     const newSortName = e.target.value;

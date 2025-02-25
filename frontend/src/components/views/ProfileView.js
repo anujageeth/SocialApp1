@@ -60,7 +60,7 @@ const ProfileView = () => {
 
   useEffect(() => {
     fetchUser();
-  }, [location]);
+  }, [location, fetchUser]);
 
   const validate = (content) => {
     let error = "";
