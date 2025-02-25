@@ -52,7 +52,7 @@ const UserLikeModal = ({ postId, open, setOpen }) => {
     if (open) {
       fetchUserLikes();
     }
-  }, [open, fetchUserLikes]);
+  }, [open]);
 
   const handleScroll = () => {
     const scrollBox = scrollBoxRef.current;
@@ -75,7 +75,7 @@ const UserLikeModal = ({ postId, open, setOpen }) => {
     return () => {
       scrollBox.removeEventListener("scroll", handleScroll);
     };
-  }, [userLikes, handleScroll]);
+  }, [userLikes]);
 
   return (
     <Modal

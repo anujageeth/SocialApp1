@@ -71,7 +71,7 @@ const Messages = (props) => {
 
   useEffect(() => {
     fetchMessages();
-  }, [props.conservant, fetchMessages]);
+  }, [props.conservant]);
 
   useEffect(() => {
     if (messages) {
@@ -157,7 +157,7 @@ const Messages = (props) => {
 
   useEffect(() => {
     socket.on("receive-message", handleReceiveMessage);
-  }, [handleReceiveMessage]);
+  }, []);
 
   return props.conservant ? (
     <>
