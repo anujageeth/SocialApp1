@@ -29,7 +29,7 @@ const CommentBrowser = (props) => {
 
   useEffect(() => {
     fetchComments();
-  }, [sortBy, fetchComments]);
+  }, [sortBy]);
 
   const handleSortBy = (e) => {
     const newSortName = e.target.value;
