@@ -33,7 +33,7 @@ const PostView = () => {
 
   useEffect(() => {
     fetchPost();
-  }, [params.id]);
+  }, [params.id, fetchPost]);
 
   return (
     <Container>

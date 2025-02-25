@@ -10,14 +10,14 @@ import CommentEditor from "./CommentEditor";
 const Comments = () => {
   const [comments, setComments] = useState(null);
   const [rerender, setRerender] = useState(false);
-  const [error, setError] = useState("");
-  const [loading, setLoading] = useState(false);
+ // const [error, setError] = useState("");
+  const [loading] = useState(false);
   const params = useParams();
 
   const fetchComments = async () => {
     const data = await getComments(params);
     if (data.error) {
-      setError("Failed to fetch comments");
+      console.log(data.error);
     } else {
       setComments(data);
     }

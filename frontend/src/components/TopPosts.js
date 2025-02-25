@@ -33,7 +33,7 @@ const TopPosts = () => {
 
   useEffect(() => {
     fetchPosts();
-  }, []);
+  }, [fetchPosts]);
 
   return (
     <Stack spacing={2}>

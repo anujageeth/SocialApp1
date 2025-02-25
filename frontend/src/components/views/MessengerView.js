@@ -47,7 +47,7 @@ const MessengerView = () => {
 
   useEffect(() => {
     fetchConversations();
-  }, []);
+  }, );
 
   useEffect(() => {
     updateDimensions();
