@@ -7,7 +7,7 @@ const theme = createTheme({
         variant: "outlined",
       },
       styleOverrides: {
-        root: ({ ownerState, theme }) => ({
+        root: ({ theme }) => ({
           ...{
             padding: theme.spacing(2),
             borderWidth: "1.5px",
