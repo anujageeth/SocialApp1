@@ -1,4 +1,4 @@
-import { Card, Container, Stack, Tab, Tabs } from "@mui/material";
+import {  Container, Stack } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import { useNavigate, useParams, useLocation } from "react-router-dom";
 import { getUser, updateUser } from "../../api/users";
@@ -8,7 +8,7 @@ import CommentBrowser from "../CommentBrowser";
 import ErrorAlert from "../ErrorAlert";
 import FindUsers from "../FindUsers";
 import Footer from "../Footer";
-import GoBack from "../GoBack";
+//import GoBack from "../GoBack";
 import GridLayout from "../GridLayout";
 import Loading from "../Loading";
 import MobileProfile from "../MobileProfile";
@@ -18,7 +18,7 @@ import Profile from "../Profile";
 import ProfileTabs from "../ProfileTabs";
 
 const ProfileView = () => {
-  const [loading, setLoading] = useState(true);
+  //const [loading, setLoading] = useState(true);
   const [profile, setProfile] = useState(null);
   const [editing, setEditing] = useState(false);
   const [tab, setTab] = useState("posts");
@@ -29,9 +29,9 @@ const ProfileView = () => {
   const location = useLocation();
 
   const fetchUser = async () => {
-    setLoading(true);
+    //setLoading(true);
     const data = await getUser(params);
-    setLoading(false);
+    //setLoading(false);
     if (data.error) {
       setError(data.error);
     } else {
