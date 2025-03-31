@@ -13,7 +13,7 @@ RUN npm install
 #copy files
 COPY . .
 
-# backend running port
+# frontend running port
 EXPOSE 3000
 
 # start the app
